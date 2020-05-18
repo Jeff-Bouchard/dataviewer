@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="47C3BFCC7A8D62D848DE5D9661440102F1C52573D829A01E8A2856DE09ECC273AF8C0DF96A836294EA9027B3AFE3A1A3CE3549A226A7D7EB6D9600A32A21B9B5" Timestamp="1D62CEF09EFA34B" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="0FB92C7B50E982DC9C1F444FD8DBB238684E860A69A6A579B4C31ECE4B2E6838E70B2A4686CB7258ED1CAE1C8772FC6AA4990B48920B2011287352EC3797CC16" Timestamp="1D62D1D1E9A4D92" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Web Module: WebVI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
 	</SourceModelFeatureSet>
-	<ComponentDefinition DefaultConfigurationName="Configuration1" Id="6d5deda4309e444197296bbdb14c8df0" RootNamespaceId="154001a59f6c438e8deafb1582757202" xmlns="http://www.ni.com/GComponent.xsd">
+	<ComponentDefinition Company="Cycleworm" DefaultConfigurationName="Configuration1" Id="6d5deda4309e444197296bbdb14c8df0" Product="Data Viewer" RootNamespaceId="154001a59f6c438e8deafb1582757202" xmlns="http://www.ni.com/GComponent.xsd">
 		<Icon Id="60e7f79568c44c9a80b8e418054f2d82" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 			<IconPanel Height="[float]40" Id="7d0f1313412a40e2b72bed311babecf1" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
 				<IconTemplate Height="[float]40" Id="c01996ea1ed04d7bb9d33795f9c4ffc7" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
@@ -27,6 +27,7 @@
 				<SourceFileReference Id="70b5576296641f3a8f726576da69823" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Index.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="Index.gviweb" />
 				<SourceFileReference Id="cdc8dc8482744f9b9674b54dad1ef4ef" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="ConvertData.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="ConvertData.gviweb" />
 				<SourceFileReference Id="166ce8ab2552413a8010fb23a6bea1c6" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Simlate_Delay.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="Simlate_Delay.gviweb" />
+				<SourceFileReference Id="9d8bf4d8666343e2b8fdd7ee15945bbf" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="UpdatePlotLegend.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="UpdatePlotLegend.gviweb" />
 			</NameScopingEnvoy>
 		</EmbeddedDefinitionReference>
 		<NameScopingEnvoy Id="6acf8493c19d4aaf87bdb09ad5c38e94" Name="App.gcomp" NameTracksFileName="True">
