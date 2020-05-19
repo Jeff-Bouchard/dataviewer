@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="E1523D0A2742B8BCF9F475C281258FF7208FD07148C69E24765CCE4AE004BEBCE1FAC4F93154A4A862E884EEAE04D31380AF6AD8D7A7A3F3A3F310E4448FABE3" Timestamp="1D62DF50BDDC00C" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@345d4a34cebb45398902f3b242a1be9a" Id="4062d7cbe74540aaae55b9c178b27cd1" xmlns="http://www.ni.com/MocCommon">
+		<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+			<TypeDefinitionTarget TargetName="NI::G Core::Color Picker::Color.gtype" />
+		</p.TypeDefinitionTargets>
+		<Icon Id="4db09fad519b4529950f6c86fd1a3e3d" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="9c642202b774f288a2f4b744e1ee029" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="827e13964f664dbfbc3778f03451b44a" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@345d4a34cebb45398902f3b242a1be9a" Id="7edb5b30fbc142acb676423ecdf9235c" Name="Data">
+			<p.DefaultValue>0_0_</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="NI::G Core::Color Picker::Color.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="dde5cb8fbc0e48f9aa1cc49bf350526f" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="d9a2e31d420c4babb307fa9adfa1525d" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="70d8f92e054f412badc8a238f7793b43" Name="Data.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="986a232f82bc47aaa00f854fbf43f7a8" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="46100ca71dac4cc4905449c94d7bf961" xmlns="http://www.ni.com/MocCommon">
+					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@345d4a34cebb45398902f3b242a1be9a" Height="[float]117" Id="d53ef5c65f5248cca63734aadf0c8373" Label="[UIModel]d052594bc19448b8973fc75e5eab5752" Left="[float]139" TabIndex="[int]0" Top="[float]254" Value="{DataItemBinding Id=7edb5b30fbc142acb676423ecdf9235c}" Width="[float]113" xmlns="http://www.ni.com/PanelCommon">
+						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="daeaea2026f240619fd3f903bab9337c" Label="[UIModel]1f44f5d2967c40d4929c94675c4925d1" Left="[float]10" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.CartesianGraphBaseProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]0" Top="[float]21" Value="{ClusterBinding FieldName=Data}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="1f44f5d2967c40d4929c94675c4925d1" LabelOwner="[UIModel]daeaea2026f240619fd3f903bab9337c" Left="[float]10" Text="[string]Data" Top="[float]1" Width="[float]25" />
+						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="b395afbf29d94f7c8e7493252ab4a0d6" Label="[UIModel]b332b77c7dcf4447b30b1ac1df5e4eaa" Left="[float]10" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.ArrayViewerBaseProxy, NationalInstruments.Controls.Runtime" TabIndex="[int]1" Top="[float]78" Value="{ClusterBinding FieldName=Raw\ Data}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="b332b77c7dcf4447b30b1ac1df5e4eaa" LabelOwner="[UIModel]b395afbf29d94f7c8e7493252ab4a0d6" Left="[float]10" Text="[string]Raw Data" Top="[float]58" Width="[float]50" />
+					</Cluster>
+					<Label Height="[float]16" Id="d052594bc19448b8973fc75e5eab5752" LabelOwner="[UIModel]d53ef5c65f5248cca63734aadf0c8373" Left="[float]139" Text="[string]Data" Top="[float]234" Width="[float]25" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="345d4a34cebb45398902f3b242a1be9a">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Data" DataType=":DotNet:NationalInstruments.Controls.Runtime.CartesianGraphBaseProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Raw Data" DataType=":DotNet:NationalInstruments.Controls.Runtime.ArrayViewerBaseProxy, NationalInstruments.Controls.Runtime" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

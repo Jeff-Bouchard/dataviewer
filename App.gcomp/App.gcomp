@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="0FB92C7B50E982DC9C1F444FD8DBB238684E860A69A6A579B4C31ECE4B2E6838E70B2A4686CB7258ED1CAE1C8772FC6AA4990B48920B2011287352EC3797CC16" Timestamp="1D62D1D1E9A4D92" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="115D9805EE2C8BC4D86D4FD2A236211B4D0B4DE095C3EF69ED6A891308F42E48A0AAA2AEEFB7F27086A396FA44D4BEF06500E833A709D15C900BDC59C8B3FD34" Timestamp="1D62DF406BE3A63" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Web Module: WebVI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
@@ -28,6 +28,8 @@
 				<SourceFileReference Id="cdc8dc8482744f9b9674b54dad1ef4ef" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="ConvertData.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="ConvertData.gviweb" />
 				<SourceFileReference Id="166ce8ab2552413a8010fb23a6bea1c6" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Simlate_Delay.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="Simlate_Delay.gviweb" />
 				<SourceFileReference Id="9d8bf4d8666343e2b8fdd7ee15945bbf" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="UpdatePlotLegend.gviweb" OverridingModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.HTMLVirtualInstrument" StoragePath="UpdatePlotLegend.gviweb" />
+				<SourceFileReference Bindings="EnvoyManager" Id="b6d4cfecdfab446ba6ca6aa26cd7c4ee" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Data.gtype" StoragePath="Data.gtype\Data.gtype" />
+				<SourceFileReference Bindings="EnvoyManager" Id="58eab11060f42e09ed40575e6b336ac" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="States.gtype" StoragePath="States.gtype\States.gtype" />
 			</NameScopingEnvoy>
 		</EmbeddedDefinitionReference>
 		<NameScopingEnvoy Id="6acf8493c19d4aaf87bdb09ad5c38e94" Name="App.gcomp" NameTracksFileName="True">

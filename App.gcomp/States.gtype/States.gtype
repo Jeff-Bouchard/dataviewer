@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="74A6ECF391A08C586E5387E9E73E1398AA551E73F32916E61212DA363F03C8CDADD7EB34A7639B10A29542120F1D9F139E3146D51275A42A2992EC3B7E4FE551" Timestamp="1D62DF406BE87E7" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@d8251bb81efa40f9b7fd958e1e964100" Id="e4deaf2db99d4233b393eba1e681436b" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="e9b48d36a030447d858c73133227d142" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="617d6b9584964acbb217f700b6e60bcb" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="53270049be0c47c792b7e30a7ffadde1" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@d8251bb81efa40f9b7fd958e1e964100" Id="1dc1ca4deed7461090fc8f59aeec4e62" Name="States">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="ab7b4a23c88745b39f2c9cec82a327ea" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="774aa4afebfa449687f82355a8aff6f8" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="e27828c1ed88447f83468c65801ea44a" Name="States.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="ff1753ef1f2e466aafa36f3eed4150d5" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="21f61dcfd2bd4ee6be7e145f7dfdd68f" xmlns="http://www.ni.com/MocCommon">
+					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="2974d115f3c477093d0b87f559ffb16" IsTypeAheadEnabled="[bool]True" Label="[UIModel]f237e6b7865a403ea4e08bd13ad57532" Left="[float]168" TabIndex="[int]0" Top="[float]165" Value="{DataItemBinding Id=1dc1ca4deed7461090fc8f59aeec4e62}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<EnumSelectorInfo DisplayValue="[string]Init" DisplayValueOverride="[string]" Id="26" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Wait for Input" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+					</EnumSelector>
+					<Label Height="[float]16" Id="f237e6b7865a403ea4e08bd13ad57532" LabelOwner="[UIModel]2974d115f3c477093d0b87f559ffb16" Left="[float]168" Text="[string]States" Top="[float]145" Width="[float]32" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="d8251bb81efa40f9b7fd958e1e964100">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Init" />
+					<EnumerationMember Value="1" Name="Wait for Input" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>
