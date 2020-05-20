@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="4E157D0E201F207F37A4647C70A6C1908A5010318F607D53768908BE9DF56EA376DBA7BEFD247BC8A0F5C92EFC0E65060087BD61C42D486827CD9DBE574C5209" Timestamp="1D62E3A3628C48D" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="A47277B0BA1379517448AFD5EB349FE2DE2A3B4580806D5B3DB4E415277D5FC2959402948B13647E541048750BEB3E06466B6A2B7B0B9928B48E389F34E56FB3" Timestamp="1D62EC8A84653B4" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
@@ -47,6 +47,18 @@
 			</DataAccessor>
 			<NodeLabel AttachedTo="72bcf251a8bf4437b62c3270b790375c" Bounds="45 0 30 15" Id="851033cb05654ff58bdfb4a09317ed23" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>URL Image</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="0 0 40 15" DataItem="db295a1acb894df0b07c56081f4ba15c" Id="4d75da1b2f784e87b79cf8e1fb674c5a" Label="781bb800bc844bfaa907223ef1b2adf3">
+				<Terminal DataType="String" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="4d75da1b2f784e87b79cf8e1fb674c5a" Bounds="-35 0 30 15" Id="781bb800bc844bfaa907223ef1b2adf3" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>upload_skylink</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="0 0 40 15" DataItem="d5cedd60533246d7992f5e61952079dd" Id="52071fbc23d24ea1ba7d09c3c6a119ad" Label="fb11148259874fb7a6129c7b40762298">
+				<Terminal DataType="Int32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="52071fbc23d24ea1ba7d09c3c6a119ad" Bounds="-35 0 30 15" Id="fb11148259874fb7a6129c7b40762298" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Menu</p.Text>
 			</NodeLabel>
 		</DiagramUnplacedItems>
 		<FrontPanelUnplacedItems Id="16f16280b03244bbac8d3dac1a1a6d61" Left="[float]0" PanelSizeMode="Fixed" Top="[float]0" />
@@ -375,7 +387,7 @@
 								<NodeLabel AttachedTo="652b8085b278444ca89d3ce2c0529ad8" Bounds="19 50 61 14" Id="3597994d90494ff1b63b799e7fd5bf3a" xmlns="http://www.ni.com/PlatformFramework">
 									<p.Text>Upload File</p.Text>
 								</NodeLabel>
-								<Wire Id="570ce47ffe00490488317d8e2034861f" Joints="N(21c7406a02e8418592bf4e00cb816cb4:R3)|(185,245) h(9) B(1) N(ef97037ddba64ffd9150363d5f63a054:o0)|(286,245) B(1) v(60) N(f8b389336f6d48818178a0e0645af906:Value)|(228,305)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="570ce47ffe00490488317d8e2034861f" Joints="N(21c7406a02e8418592bf4e00cb816cb4:R3)|(185,245) N(ef97037ddba64ffd9150363d5f63a054:o0)|(286,245)" xmlns="http://www.ni.com/PlatformFramework" />
 								<WhileLoop Bounds="290 140 155 150" DiagramId="aa36b373d6a440bea7efda217146f69a" Id="7751180d86a942c09fd5ef0a0b715e39">
 									<LoopIteration Bounds="5 120 15 15" Id="78e3e1db376240aa917dd1f085f40dce" />
 									<LoopCondition Bounds="125 120 15 15" Id="b1c7378992fa4cb8bdedf8922f15493b" />
@@ -406,13 +418,6 @@
 									<LoopTunnel Bounds="-4 100 13 10" Docking="Left" Id="ef97037ddba64ffd9150363d5f63a054" Terminals="o0=570ce47ffe00490488317d8e2034861f, i0=18e776e5d492448cb1c3c362cc57e88d" />
 									<LoopTunnel Bounds="146 100 13 10" Docking="Right" Id="f1905021e4714c8093f283ab5aba7cde" Terminals="o0=f144cf1679b94ed7b3fdb528907e3691, i0=68462e19f701436ba8e79063392fa6dd" />
 								</WhileLoop>
-								<DataAccessor Bounds="525 155 40 15" DataItem="a09ee2db72f4e8aa31bc8c07db71a24" Id="42e0f3ace4fc44028f4f1a4bb76e2090" Label="94dc5bd76d284b53be26e0995c816e54" xmlns="http://www.ni.com/MocCommon">
-									<Terminal DataType="String" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
-								</DataAccessor>
-								<NodeLabel AttachedTo="42e0f3ace4fc44028f4f1a4bb76e2090" Bounds="570 155 42 14" Id="94dc5bd76d284b53be26e0995c816e54" xmlns="http://www.ni.com/PlatformFramework">
-									<p.Text>FileText</p.Text>
-								</NodeLabel>
-								<Wire Id="fe5f1a0c33844035af99187d69790844" Joints="N(e79eb492abf442c98ee0953de3c935cb:R0)|(495,210) v(2.5) h(10) v(2.5) h(15) v(-55) N(42e0f3ace4fc44028f4f1a4bb76e2090:Value)|(528,160)" xmlns="http://www.ni.com/PlatformFramework" />
 								<MethodCall Bounds="145 210 40 40" Id="21c7406a02e8418592bf4e00cb816cb4" ResolveFailedHint="OpenFileWebVI" Signature="@5cb64bcc66c147e8b1441454aba3ef25" Target="UploadLib::UploadFileWebVI.jsli::OpenFileWebVI" xmlns="http://www.ni.com/MocCommon">
 									<p.MethodDeclaration>
 										<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
@@ -435,26 +440,7 @@
 									<Terminal DataType="String" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 									<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 								</MethodCall>
-								<Wire Id="f144cf1679b94ed7b3fdb528907e3691" Joints="N(f1905021e4714c8093f283ab5aba7cde:o0)|(449,245) h(6) B(1) N(e79eb492abf442c98ee0953de3c935cb:L3)|(455,240) B(1) v(60) N(25f07f0e1adc4efe8574ac8c47aeedae:Value)|(488,305)" xmlns="http://www.ni.com/PlatformFramework" />
-								<DataAccessor Bounds="225 300 40 15" DataItem="6095c85aa28d412292eb4dc304848ee2" Id="f8b389336f6d48818178a0e0645af906" Label="c7049281ef464149877f87f0aa3bbabd" xmlns="http://www.ni.com/MocCommon">
-									<Terminal DataType="Error" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
-								</DataAccessor>
-								<NodeLabel AttachedTo="f8b389336f6d48818178a0e0645af906" Bounds="270 300 50 14" Id="c7049281ef464149877f87f0aa3bbabd" xmlns="http://www.ni.com/PlatformFramework">
-									<p.Text>error out</p.Text>
-								</NodeLabel>
-								<DataAccessor Bounds="485 300 40 15" DataItem="7c15a886c49c47ddbde5a85a8fba7081" Id="25f07f0e1adc4efe8574ac8c47aeedae" Label="45e0eb9826db435d8665ac47e54688ed" xmlns="http://www.ni.com/MocCommon">
-									<Terminal DataType="Error" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
-								</DataAccessor>
-								<NodeLabel AttachedTo="25f07f0e1adc4efe8574ac8c47aeedae" Bounds="530 300 39 14" Id="45e0eb9826db435d8665ac47e54688ed" xmlns="http://www.ni.com/PlatformFramework">
-									<p.Text>Output</p.Text>
-								</NodeLabel>
-								<DataAccessor Bounds="525 235 40 15" DataItem="775499e59215465a8d310a11dba5cfa8" Id="9170bd7d4d7f41f8a78f0facb572d6a6" Label="1a78a09407cb4b209986db5f33fdc40d" xmlns="http://www.ni.com/MocCommon">
-									<Terminal DataType="Error" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
-								</DataAccessor>
-								<NodeLabel AttachedTo="9170bd7d4d7f41f8a78f0facb572d6a6" Bounds="570 235 64 14" Id="1a78a09407cb4b209986db5f33fdc40d" xmlns="http://www.ni.com/PlatformFramework">
-									<p.Text>error out_2</p.Text>
-								</NodeLabel>
-								<Wire Id="d7e749b06aa3477ea8931b8d5b79a562" Joints="N(e79eb492abf442c98ee0953de3c935cb:R3)|(495,240) N(9170bd7d4d7f41f8a78f0facb572d6a6:Value)|(528,240)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="f144cf1679b94ed7b3fdb528907e3691" Joints="N(f1905021e4714c8093f283ab5aba7cde:o0)|(449,245) h(6) N(e79eb492abf442c98ee0953de3c935cb:L3)|(455,240)" xmlns="http://www.ni.com/PlatformFramework" />
 							</EventStructure.EventCase>
 						</EventStructure>
 						<Wire Id="268c4293d2614a5cbd0febd979daafc4" Joints="N(815f88294d1546f59a6c4f2eac5454c5:dc62704cbb27482884d49d67b1ee9768)|(4,395) N(2972c0e6807842bab9663a95a23c64ad:3fe9756785134cbdafc4ddada9e85a31)|(42,395)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -556,124 +542,115 @@
 				<p.Text>Data</p.Text>
 			</NodeLabel>
 		</BlockDiagram>
-		<HtmlFrontPanel Height="[float]1089" HtmlPanel="[bool]False" Id="a3bbfca3b6664cc4b808a9f997caa85f" LayoutSystem="[LayoutSystem]Flexible" Left="[float]0" PanelSizeMode="Fixed" Top="[float]0" UpdatedRootPage="[string]&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&quot;en&quot;&gt;&#xA;&#xA;    &lt;head&gt;&#xA;        &lt;meta charset=&quot;utf-8&quot;&gt;&#xA;        &lt;!---Read only section. Source panel edits to these document properties will not be persisted--&gt;&#xA;        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;&#xA;        &lt;title&gt;Index&lt;/title&gt;&#xA;        &lt;!---End read only section. Additional scripts or document properties can be added outside this section--&gt;&#xA;        &lt;style ni-autogenerated-style-id=&quot;&quot;&gt;&#xA;            /* Edits to the content of this style tag will not be persisted. To add additional styles, add a new style tag before or after this one */&#xA;        &lt;/style&gt;&#xA;&#xA;    &lt;/head&gt;&#xA;&#xA;    &lt;body&gt;&#xA;        &lt;div id=&quot;ni-outdated-browser-message&quot; style=&quot;display:none&quot;&gt;This browser is missing features needed to run this web application. Open this web application in a supported browser.&lt;/div&gt;&#xA;        &lt;div id=&quot;ni-failed-to-load-vireo-source&quot; style=&quot;display:none&quot;&gt;&#xA;            &lt;div id=&quot;ni-failed-to-load-vireo-message-title&quot;&gt;&#xA;                Unable to load resource file&#xA;            &lt;/div&gt;&#xA;            &lt;div id=&quot;ni-failed-to-load-vireo-message-body&quot;&gt;&#xA;                Verify all WebVI files are available and served using an HTTP server or use a browser that can load files directly from the file system. See &lt;a href=&quot;http://digital.ni.com/express.nsf/bycode/HOSTWEBAPP&quot;&gt;Hosting a Web Application on a Server&lt;/a&gt;                for more information.&#xA;            &lt;/div&gt;&#xA;        &lt;/div&gt;&#xA;        &lt;div class=&quot;ni-front-panel-wrapper&quot; vi-ref=&quot;&quot; ni-control-id=&quot;FrontPanelWrapper&quot;&gt;&#xA;            &lt;ni-front-panel control-resize-mode='fixed' layout='flexible' ni-control-id='2'&gt;&#xA;                &lt;input type=&quot;file&quot; id=&quot;myFile&quot; style=&quot;display: none;&quot;&gt;&#xA;&#xA;                &#xA;                &#xA;                &#xA;                &#xA;            &lt;/ni-front-panel&gt;&#xA;        &lt;/div&gt;&#xA;    &lt;/body&gt;&#xA;&#xA;&lt;/html&gt;" Width="[float]1600" xmlns="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI">
-			<FlexibleLayoutGroup Height="[float]72" Id="f662596316449d2ab61f180c88b9cc9" Left="[float]30" Top="[float]30" Width="[float]1540" xmlns="http://www.ni.com/PanelCommon">
-				<FlexibleLayoutWrapper FlexGrow="[double]1" Height="[float]72" Id="44c416aa1f104c1b8ce2ae7c9f95e25e" Left="[float]0" Top="[float]0" Width="[float]1540">
-					<FlexibleLayoutContainer Height="[float]56" Id="90ce4a92f78f4c8fa4a8f764d42b9a90" Left="[float]8" Top="[float]8" Width="[float]1524">
-						<FlexibleLayoutComponent Height="[float]40" Id="48c95c622b4b4829832e33e47c17441d" Left="[float]14" Top="[float]6" Width="[float]40">
-							<UrlImage Alternate="[string]" BaseName="[string]UrlImage" Height="[float]40" Id="82f81058be944889be6633b236ef7a6" Label="[UIModel]b08d2e25f991437384fca4014de66e3d" Left="[float]0" Source="{DataItemBinding Id=b7ba4d51f1b541a7b4286ca1fc2f5f52}" Stretch="[SMStretch]Uniform" TabIndex="[int]0" Top="[float]0" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-							<Label Height="[float]16" Id="b08d2e25f991437384fca4014de66e3d" LabelOwner="[UIModel]82f81058be944889be6633b236ef7a6" Left="[float]0" Text="[string]URL Image" Top="[float]-20" Visible="[bool]False" Width="[float]58" />
-						</FlexibleLayoutComponent>
-						<FlexibleLayoutComponent Height="[float]40" Id="ac066e7a6f4a4e4eae34524dccfa7d67" Left="[float]62" Top="[float]6" Width="[float]200">
-							<Button BaseName="[string]Button" Content="[string]Load from Skylink" Height="[float]40" Id="d17e9bb9430d431d976269a3e4f468bf" Label="[UIModel]e8d7a518947c462b9fb3caf9e5cb7978" Left="[float]0" TabIndex="[int]0" Top="[float]0" Value="{DataItemBinding Id=8950d1100b794e7482cf7ba7c101ba96}" Width="[float]200" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-							<Label Height="[float]16" Id="e8d7a518947c462b9fb3caf9e5cb7978" LabelOwner="[UIModel]d17e9bb9430d431d976269a3e4f468bf" Left="[float]0" Text="[string]Load Measurement Data from Skynet" Top="[float]-20" Visible="[bool]False" Width="[float]198" />
-						</FlexibleLayoutComponent>
-						<FlexibleLayoutComponent Height="[float]40" Id="d11532725cb14cebb62a83ccbc2d0a06" Left="[float]270" Top="[float]6" Width="[float]200">
-							<Button BaseName="[string]Button" Content="[string]Clear Data" Height="[float]40" Id="44ed7ee126ae4aedaec477144b3cd609" Label="[UIModel]7f57ef108fe94234943645d8a162945c" Left="[float]0" TabIndex="[int]0" Top="[float]0" Value="{DataItemBinding Id=101d107fedfb4d889875aca01257da61}" Width="[float]200" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-							<Label Height="[float]16" Id="7f57ef108fe94234943645d8a162945c" LabelOwner="[UIModel]44ed7ee126ae4aedaec477144b3cd609" Left="[float]0" Text="[string]Clear Data" Top="[float]-20" Visible="[bool]False" Width="[float]55" />
-						</FlexibleLayoutComponent>
-						<FlexibleLayoutComponent Height="[float]44" Id="b0ca70c5facc466099e37088b20f2225" Left="[float]478" Top="[float]6" Width="[float]440">
-							<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="5a37646d63494e6c95de2572b2b9e87d" IsReadOnly="[bool]False" Label="[UIModel]9727150a6ceb4223bcf024629e413b56" Left="[float]0" TabIndex="[int]0" Text="{DataItemBinding Id=43d112a95bdb47619d75ad6d3ea54a27}" Top="[float]20" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]440" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-							<Label Height="[float]16" Id="9727150a6ceb4223bcf024629e413b56" LabelOwner="[UIModel]5a37646d63494e6c95de2572b2b9e87d" Left="[float]0" Text="[string]Paste Skylink and Load Data into the Viewer" Top="[float]0" Width="[float]232" />
-						</FlexibleLayoutComponent>
-						<FlexibleLayoutComponent Height="[float]40" Id="46ae0020912749b39954f1044630ba28" Left="[float]926" Top="[float]6" Width="[float]200">
-							<Button BaseName="[string]Button" Content="[string]Upload File" Height="[float]40" Id="7e6ea6fd714e9fb31713a55cc81499" Label="[UIModel]df889083d5b6476abb2b1ffcf2b5990c" Left="[float]0" TabIndex="[int]0" Top="[float]0" Value="{DataItemBinding Id=2fb12e7ea92741c0b4909792e068728f}" Width="[float]200" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-							<Label Height="[float]16" Id="df889083d5b6476abb2b1ffcf2b5990c" LabelOwner="[UIModel]7e6ea6fd714e9fb31713a55cc81499" Left="[float]0" Text="[string]Upload File" Top="[float]-20" Visible="[bool]False" Width="[float]60" />
+		<HtmlFrontPanel Height="[float]947" HtmlPanel="[bool]False" Id="a3bbfca3b6664cc4b808a9f997caa85f" LayoutSystem="[LayoutSystem]Flexible" Left="[float]0" PanelSizeMode="Fixed" Top="[float]0" UpdatedRootPage="[string]&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&quot;en&quot;&gt;&#xA;&#xA;    &lt;head&gt;&#xA;        &lt;meta charset=&quot;utf-8&quot;&gt;&#xA;        &lt;!---Read only section. Source panel edits to these document properties will not be persisted--&gt;&#xA;        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;&#xA;        &lt;title&gt;Index&lt;/title&gt;&#xA;        &lt;!---End read only section. Additional scripts or document properties can be added outside this section--&gt;&#xA;        &lt;style ni-autogenerated-style-id=&quot;&quot;&gt;&#xA;            /* Edits to the content of this style tag will not be persisted. To add additional styles, add a new style tag before or after this one */&#xA;        &lt;/style&gt;&#xA;&#xA;    &lt;/head&gt;&#xA;&#xA;    &lt;body&gt;&#xA;        &lt;div id=&quot;ni-outdated-browser-message&quot; style=&quot;display:none&quot;&gt;This browser is missing features needed to run this web application. Open this web application in a supported browser.&lt;/div&gt;&#xA;        &lt;div id=&quot;ni-failed-to-load-vireo-source&quot; style=&quot;display:none&quot;&gt;&#xA;            &lt;div id=&quot;ni-failed-to-load-vireo-message-title&quot;&gt;&#xA;                Unable to load resource file&#xA;            &lt;/div&gt;&#xA;            &lt;div id=&quot;ni-failed-to-load-vireo-message-body&quot;&gt;&#xA;                Verify all WebVI files are available and served using an HTTP server or use a browser that can load files directly from the file system. See &lt;a href=&quot;http://digital.ni.com/express.nsf/bycode/HOSTWEBAPP&quot;&gt;Hosting a Web Application on a Server&lt;/a&gt;                for more information.&#xA;            &lt;/div&gt;&#xA;        &lt;/div&gt;&#xA;        &lt;div class=&quot;ni-front-panel-wrapper&quot; vi-ref=&quot;&quot; ni-control-id=&quot;FrontPanelWrapper&quot;&gt;&#xA;            &lt;ni-front-panel control-resize-mode='fixed' layout='flexible' ni-control-id='2'&gt;&#xA;                &lt;input type=&quot;file&quot; id=&quot;myFile&quot; style=&quot;display: none;&quot;&gt;&#xA;&#xA;&#xA;                &#xA;                &#xA;                &#xA;                &#xA;            &lt;/ni-front-panel&gt;&#xA;        &lt;/div&gt;&#xA;    &lt;/body&gt;&#xA;&#xA;&lt;/html&gt;" Width="[float]1600" xmlns="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI">
+			<FlexibleLayoutGroup Height="[float]828" Id="b118511eaa844f979a02c51a77f1fbf5" Left="[float]30" Top="[float]30" Width="[float]1540" xmlns="http://www.ni.com/PanelCommon">
+				<FlexibleLayoutWrapper FlexGrow="[double]1" Height="[float]828" Id="446a2cf7d4054568901df745c0ae6be0" Left="[float]0" Top="[float]0" Width="[float]1540">
+					<FlexibleLayoutContainer Height="[float]812" Id="aba7c967038a43ca8a671009d2b46aa5" Left="[float]8" Top="[float]8" Width="[float]1524">
+						<FlexibleLayoutComponent Height="[float]800" Id="a71c8e50641c4773bf43bf73a3b15c1d" Left="[float]14" Top="[float]6" Width="[float]1500">
+							<TabControl BaseName="[string]Tab" Height="[float]800" Id="ba11e692c3dc482b982bd48a3812e028" IncludeInCapture="[bool]False" Label="[UIModel]e61aafe879d2413997487b773f76e2fd" Left="[float]0" MinHeight="[float]800" SelectedIndex="{DataItemBinding Id=d5cedd60533246d7992f5e61952079dd}" TabIndex="[int]0" Top="[float]0" Width="[float]1500" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<TabItem Header="[string]DataViewer" Id="e5f55c2e012c4940be6563c92d27536d" LayoutSystem="[LayoutSystem]Flexible" Left="[float]0" TabIndex="[int]0" Top="[float]0">
+									<LayoutPanel Height="[float]775" Id="7d7b1f2ee09c451d9a11cee36c787966" Left="[float]1" MinHeight="[float]775" Top="[float]24" Width="[float]1498">
+										<FlexibleLayoutGroup Height="[float]72" Id="b7ffac567ac4be5bbf345bd030ec732" Left="[float]6" Top="[float]6" Width="[float]1486" xmlns="http://www.ni.com/PanelCommon">
+											<FlexibleLayoutWrapper FlexGrow="[double]1" Height="[float]72" Id="4787343705c845bc857e890cfbeda71d" Left="[float]0" Top="[float]0" Width="[float]1486">
+												<FlexibleLayoutContainer Height="[float]56" Id="c5d2e5f6b9314984a16a867ddbfdde05" Left="[float]8" Top="[float]8" Width="[float]1470">
+													<FlexibleLayoutComponent Height="[float]40" Id="9998d567b07b488287cf64093a53dd97" Left="[float]14" Top="[float]6" Width="[float]40">
+														<UrlImage Alternate="[string]" BaseName="[string]UrlImage" Height="[float]40" Id="82f81058be944889be6633b236ef7a6" Label="[UIModel]b08d2e25f991437384fca4014de66e3d" Left="[float]0" Source="{DataItemBinding Id=b7ba4d51f1b541a7b4286ca1fc2f5f52}" Stretch="[SMStretch]Uniform" TabIndex="[int]0" Top="[float]0" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+														<Label Height="[float]16" Id="b08d2e25f991437384fca4014de66e3d" LabelOwner="[UIModel]82f81058be944889be6633b236ef7a6" Left="[float]0" Text="[string]URL Image" Top="[float]-20" Visible="[bool]False" Width="[float]58" />
+													</FlexibleLayoutComponent>
+													<FlexibleLayoutComponent Height="[float]44" Id="befcd91c2991448b9a6ef7314051f478" Left="[float]62" Top="[float]6" Width="[float]200">
+														<Button BaseName="[string]Button" Content="[string]Load from Skylink" Height="[float]44" Id="d17e9bb9430d431d976269a3e4f468bf" Label="[UIModel]e8d7a518947c462b9fb3caf9e5cb7978" Left="[float]0" TabIndex="[int]0" Top="[float]0" Value="{DataItemBinding Id=8950d1100b794e7482cf7ba7c101ba96}" Width="[float]200" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+														<Label Height="[float]16" Id="e8d7a518947c462b9fb3caf9e5cb7978" LabelOwner="[UIModel]d17e9bb9430d431d976269a3e4f468bf" Left="[float]0" Text="[string]Load Measurement Data from Skynet" Top="[float]-20" Visible="[bool]False" Width="[float]198" />
+													</FlexibleLayoutComponent>
+													<FlexibleLayoutComponent Height="[float]44" Id="23e136bed3984f7ba32f91fa3ce9048d" Left="[float]270" Top="[float]6" Width="[float]200">
+														<Button BaseName="[string]Button" Content="[string]Clear Data" Height="[float]44" Id="44ed7ee126ae4aedaec477144b3cd609" Label="[UIModel]7f57ef108fe94234943645d8a162945c" Left="[float]0" TabIndex="[int]0" Top="[float]0" Value="{DataItemBinding Id=101d107fedfb4d889875aca01257da61}" Width="[float]200" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+														<Label Height="[float]16" Id="7f57ef108fe94234943645d8a162945c" LabelOwner="[UIModel]44ed7ee126ae4aedaec477144b3cd609" Left="[float]0" Text="[string]Clear Data" Top="[float]-20" Visible="[bool]False" Width="[float]55" />
+													</FlexibleLayoutComponent>
+													<FlexibleLayoutComponent Height="[float]44" Id="a8bcedf40b3c4d36b3187f1e1e0f6dc0" Left="[float]478" Top="[float]6" Width="[float]440">
+														<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="5a37646d63494e6c95de2572b2b9e87d" IsReadOnly="[bool]False" Label="[UIModel]9727150a6ceb4223bcf024629e413b56" Left="[float]0" TabIndex="[int]0" Text="{DataItemBinding Id=43d112a95bdb47619d75ad6d3ea54a27}" Top="[float]20" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]440" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+														<Label Height="[float]16" Id="9727150a6ceb4223bcf024629e413b56" LabelOwner="[UIModel]5a37646d63494e6c95de2572b2b9e87d" Left="[float]0" Text="[string]Paste Skylink and Load Data into the Viewer" Top="[float]0" Width="[float]232" />
+													</FlexibleLayoutComponent>
+													<FlexibleLayoutComponent Height="[float]44" Id="dc7176a1f29c4f348b7a319fe0c21a92" Left="[float]926" Top="[float]6" Width="[float]200">
+														<Button BaseName="[string]Button" Content="[string]Upload File" Height="[float]44" Id="7e6ea6fd714e9fb31713a55cc81499" Label="[UIModel]df889083d5b6476abb2b1ffcf2b5990c" Left="[float]0" TabIndex="[int]0" Top="[float]0" Value="{DataItemBinding Id=2fb12e7ea92741c0b4909792e068728f}" Width="[float]200" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+														<Label Height="[float]16" Id="df889083d5b6476abb2b1ffcf2b5990c" LabelOwner="[UIModel]7e6ea6fd714e9fb31713a55cc81499" Left="[float]0" Text="[string]Upload File" Top="[float]-20" Visible="[bool]False" Width="[float]60" />
+													</FlexibleLayoutComponent>
+													<FlexibleLayoutComponent Height="[float]44" Id="52366fa12e8944cd8402d96bfa7e2051" Left="[float]1134" Top="[float]6" Width="[float]312">
+														<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="b1f208aea3cf4da093f30d7c8c749ee2" Label="[UIModel]fdda1ddc6bdb48e68f779285ab63e24a" Left="[float]0" TabIndex="[int]0" Text="{DataItemBinding Id=db295a1acb894df0b07c56081f4ba15c}" Top="[float]20" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]312" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+															<HtmlBehavior ClassAttributes="" xmlns="http://www.ni.com/PlatformFramework">
+																<p.ElementAttributes>
+																	<Attribute Name="id" Value="upload_skylink" />
+																</p.ElementAttributes>
+															</HtmlBehavior>
+														</StringControl>
+														<Label Height="[float]16" Id="fdda1ddc6bdb48e68f779285ab63e24a" LabelOwner="[UIModel]b1f208aea3cf4da093f30d7c8c749ee2" Left="[float]0" Text="[string]upload_skylink" Top="[float]0" Width="[float]78" />
+													</FlexibleLayoutComponent>
+												</FlexibleLayoutContainer>
+											</FlexibleLayoutWrapper>
+										</FlexibleLayoutGroup>
+										<FlexibleLayoutGroup Height="[float]454" Id="b6a846176b964fce909aa3d777fb26cb" Left="[float]6" Top="[float]78" Width="[float]1486" xmlns="http://www.ni.com/PanelCommon">
+											<FlexibleLayoutWrapper FlexGrow="[double]1" Height="[float]454" Id="d0a088fbbd3446ea86210873fc385500" Left="[float]0" Top="[float]0" Width="[float]1486">
+												<FlexibleLayoutContainer Height="[float]438" Id="9c23ac28dba2442898e00d07c6e27ff1" Left="[float]8" Top="[float]8" Width="[float]1470">
+													<FlexibleLayoutComponent Height="[float]426" Id="2f11624197f34a049b7fa57876ae11c7" Left="[float]14" Top="[float]6" Width="[float]1450">
+														<Graph DataSource="{DataItemBinding Id=59ebc583f82848d5b1fc47112d74f774}" DataSourceType="[Type]Double[,]" Height="[float]406" Id="3928163a0cca4e41bed43bc5ed9dc6d1" Label="[UIModel]722016c6d33d492f9a77b13238d85bdd" Left="[float]0" MetadataAlwaysOverridesPlotNames="[bool]True" PlotAreaMargin="[SMThickness]0,0,0,0" SuppressScaleLayout="[bool]True" TabIndex="[int]0" Top="[float]20" Width="[float]1336" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+															<Axis Adjuster="[RangeAdjuster]FitExactly" Id="392bfe9bb2b14d20b9262593c10df5b0" Label="[string]Time" MajorDivisions="[UIModel]5c451f8ca78744a5abe175b8fbb1511d" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 100, System.Double" ValueType="[Type]Double">
+																<RangeLabeledDivisions Id="5c451f8ca78744a5abe175b8fbb1511d">
+																	<p.LabelPresenter Kind="LVRelativeSeconds" Format="G6" ShortFormat="0.000E+0" />
+																</RangeLabeledDivisions>
+															</Axis>
+															<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="83c0023b3d614c379045e11c5342661b" Label="[string]Amplitude" MajorDivisions="[UIModel]5a6f3085a8d148de858ade607e0bde4d" Orientation="[SMOrientation]Vertical" Range="[IRange]0, 10, System.Double" ValueType="[Type]Double">
+																<RangeLabeledDivisions Id="5a6f3085a8d148de858ade607e0bde4d">
+																	<p.LabelPresenter Kind="LVRelativeSeconds" Format="G6" ShortFormat="0.000E+0" />
+																</RangeLabeledDivisions>
+															</Axis>
+															<Plot HorizontalScale="[UIModel]392bfe9bb2b14d20b9262593c10df5b0" Id="f73b4999a44847b5a58840540d08489c" Label="[string]Plot" VerticalScale="[UIModel]83c0023b3d614c379045e11c5342661b">
+																<PlotRenderer Id="2789e01ad09d4c9cb37442e8603aa663" LineStroke="[SMSolidColorBrush]#ff962428" LineThickness="[double]1" />
+															</Plot>
+														</Graph>
+														<ScaleLegend Graph="[UIModel]3928163a0cca4e41bed43bc5ed9dc6d1" Height="[float]70" Id="da887b9c765c4d94bd3093f3fdc5ba5c" Left="[float]1343" Top="[float]364" Visible="[bool]False" Width="[float]160" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+														<PlotLegend Graph="[UIModel]3928163a0cca4e41bed43bc5ed9dc6d1" Height="[float]21" Id="b2d4ade521a84d6385787e4fca2c02fd" Left="[float]1343" Top="[float]20" Width="[float]160" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+														<CursorLegend Graph="[UIModel]3928163a0cca4e41bed43bc5ed9dc6d1" Height="[float]200" Id="64105e4e6eb948bd944665dda21da75d" Left="[float]0" Top="[float]475" Visible="[bool]False" Width="[float]320" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+														<GraphTools Graph="[UIModel]3928163a0cca4e41bed43bc5ed9dc6d1" Height="[float]35" Id="f4e219a515274c8f9f80ba2444235c25" Left="[float]0" Top="[float]433" Visible="[bool]False" Width="[float]168" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+														<Label Height="[float]16" Id="722016c6d33d492f9a77b13238d85bdd" LabelOwner="[UIModel]3928163a0cca4e41bed43bc5ed9dc6d1" Left="[float]0" Text="[string]Data" Top="[float]0" Width="[float]25" />
+													</FlexibleLayoutComponent>
+												</FlexibleLayoutContainer>
+											</FlexibleLayoutWrapper>
+										</FlexibleLayoutGroup>
+										<FlexibleLayoutGroup Height="[float]240" Id="650a8741601d4d47bd86b9ccd436ce67" Left="[float]6" Top="[float]532" Width="[float]1486" xmlns="http://www.ni.com/PanelCommon">
+											<FlexibleLayoutWrapper FlexGrow="[double]1" Height="[float]240" Id="f9015f635fcf4212bd9c84f898875f90" Left="[float]0" Top="[float]0" Width="[float]1486">
+												<FlexibleLayoutContainer Height="[float]224" Id="8c8eabc14920430b85b6a93ccef7f607" Left="[float]8" Top="[float]8" Width="[float]1470">
+													<FlexibleLayoutComponent Height="[float]212" Id="3414e44a996945cdb23c2c6ac4008342" Left="[float]14" Top="[float]6" Width="[float]1335">
+														<ArrayViewer ArrayElement="[UIModel]3e7883dd658941f18a366467a2907118" BaseName="[string]Array" Columns="[int]10" Dimensions="[int]2" FirstIndex="[ArrayElementIndex]21,0" Height="[float]192" HorizontalScrollBarVisibility="[ScrollBarVisibility]Visible" Id="94dea724b5a435b80b2197ea49c25ec" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]8087118a741b49dc9475ab7db2d2c3c2" Left="[float]0" Orientation="[SMOrientation]Horizontal" Rows="[int]6" TabIndex="[int]0" Top="[float]20" Value="{DataItemBinding Id=e2776756275749e889063ee3c341d8dc}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]1335">
+															<p.DefaultElementValue>""</p.DefaultElementValue>
+															<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="3e7883dd658941f18a366467a2907118" IsReadOnly="[bool]True" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]127" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+															<HtmlBehavior ClassAttributes="" xmlns="http://www.ni.com/PlatformFramework">
+																<p.ElementAttributes>
+																	<Attribute Name="default-element-value" Value="" />
+																</p.ElementAttributes>
+															</HtmlBehavior>
+														</ArrayViewer>
+														<Label Height="[float]16" Id="8087118a741b49dc9475ab7db2d2c3c2" LabelOwner="[UIModel]94dea724b5a435b80b2197ea49c25ec" Left="[float]0" Text="[string]Raw Data" Top="[float]0" Width="[float]50" />
+													</FlexibleLayoutComponent>
+												</FlexibleLayoutContainer>
+											</FlexibleLayoutWrapper>
+										</FlexibleLayoutGroup>
+									</LayoutPanel>
+								</TabItem>
+								<TabItem Header="[string]Help" Id="aff1e9ffa49943c38073e0c3d0cc6bae" LayoutSystem="[LayoutSystem]Flexible" Left="[float]0" TabIndex="[int]0" Top="[float]0">
+									<LayoutPanel Height="[float]775" Id="d98e3930747e40b4b7744d447c4d44be" Left="[float]1" MinHeight="[float]775" Top="[float]24" Width="[float]1498" />
+								</TabItem>
+							</TabControl>
+							<Label Height="[float]0" Id="e61aafe879d2413997487b773f76e2fd" LabelOwner="[UIModel]ba11e692c3dc482b982bd48a3812e028" Left="[float]0" Text="[string]Menu" Top="[float]-20" Visible="[bool]False" Width="[float]0" />
 						</FlexibleLayoutComponent>
 					</FlexibleLayoutContainer>
 				</FlexibleLayoutWrapper>
 			</FlexibleLayoutGroup>
-			<FlexibleLayoutGroup Height="[float]454" Id="47bf705d4da24f19b8b98892aea1fd5a" Left="[float]30" Top="[float]102" Width="[float]1540" xmlns="http://www.ni.com/PanelCommon">
-				<FlexibleLayoutWrapper FlexGrow="[double]1" Height="[float]454" Id="e3fd7cc7314b467dac502fd97f707eb7" Left="[float]0" Top="[float]0" Width="[float]1540">
-					<FlexibleLayoutContainer Height="[float]438" Id="d268f8836eb84e488823121287985195" Left="[float]8" Top="[float]8" Width="[float]1524">
-						<FlexibleLayoutComponent Height="[float]426" Id="8fcf2f9360504d7ba7a052a5df330942" Left="[float]14" Top="[float]6" Width="[float]1503">
-							<Graph DataSource="{DataItemBinding Id=59ebc583f82848d5b1fc47112d74f774}" DataSourceType="[Type]Double[,]" Height="[float]406" Id="3928163a0cca4e41bed43bc5ed9dc6d1" Label="[UIModel]722016c6d33d492f9a77b13238d85bdd" Left="[float]0" MetadataAlwaysOverridesPlotNames="[bool]True" TabIndex="[int]0" Top="[float]20" Width="[float]1336" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-								<Axis Adjuster="[RangeAdjuster]FitExactly" Id="392bfe9bb2b14d20b9262593c10df5b0" Label="[string]Time" MajorDivisions="[UIModel]5c451f8ca78744a5abe175b8fbb1511d" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 100, System.Double" ValueType="[Type]Double">
-									<RangeLabeledDivisions Id="5c451f8ca78744a5abe175b8fbb1511d">
-										<p.LabelPresenter Kind="LVRelativeSeconds" Format="G6" ShortFormat="0.000E+0" />
-									</RangeLabeledDivisions>
-								</Axis>
-								<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="83c0023b3d614c379045e11c5342661b" Label="[string]Amplitude" MajorDivisions="[UIModel]5a6f3085a8d148de858ade607e0bde4d" Orientation="[SMOrientation]Vertical" Range="[IRange]0, 10, System.Double" ValueType="[Type]Double">
-									<RangeLabeledDivisions Id="5a6f3085a8d148de858ade607e0bde4d">
-										<p.LabelPresenter Kind="LVRelativeSeconds" Format="G6" ShortFormat="0.000E+0" />
-									</RangeLabeledDivisions>
-								</Axis>
-								<Plot HorizontalScale="[UIModel]392bfe9bb2b14d20b9262593c10df5b0" Id="f73b4999a44847b5a58840540d08489c" Label="[string]Plot" VerticalScale="[UIModel]83c0023b3d614c379045e11c5342661b">
-									<PlotRenderer Id="2789e01ad09d4c9cb37442e8603aa663" LineStroke="[SMSolidColorBrush]#ff962428" LineThickness="[double]1" />
-								</Plot>
-							</Graph>
-							<ScaleLegend Graph="[UIModel]3928163a0cca4e41bed43bc5ed9dc6d1" Height="[float]70" Id="da887b9c765c4d94bd3093f3fdc5ba5c" Left="[float]1343" Top="[float]364" Visible="[bool]False" Width="[float]160" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-							<PlotLegend Graph="[UIModel]3928163a0cca4e41bed43bc5ed9dc6d1" Height="[float]21" Id="b2d4ade521a84d6385787e4fca2c02fd" Left="[float]1343" Top="[float]20" Width="[float]160" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-							<CursorLegend Graph="[UIModel]3928163a0cca4e41bed43bc5ed9dc6d1" Height="[float]200" Id="64105e4e6eb948bd944665dda21da75d" Left="[float]0" Top="[float]475" Visible="[bool]False" Width="[float]320" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-							<GraphTools Graph="[UIModel]3928163a0cca4e41bed43bc5ed9dc6d1" Height="[float]35" Id="f4e219a515274c8f9f80ba2444235c25" Left="[float]0" Top="[float]433" Visible="[bool]False" Width="[float]168" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-							<Label Height="[float]16" Id="722016c6d33d492f9a77b13238d85bdd" LabelOwner="[UIModel]3928163a0cca4e41bed43bc5ed9dc6d1" Left="[float]0" Text="[string]Data" Top="[float]0" Width="[float]25" />
-						</FlexibleLayoutComponent>
-					</FlexibleLayoutContainer>
-				</FlexibleLayoutWrapper>
-			</FlexibleLayoutGroup>
-			<FlexibleLayoutGroup Height="[float]240" Id="63ece32880e14139bb18018d03568c67" Left="[float]30" Top="[float]556" Width="[float]1540" xmlns="http://www.ni.com/PanelCommon">
-				<FlexibleLayoutWrapper FlexGrow="[double]1" Height="[float]240" Id="ceff1b885f99443c825822d7f10da531" Left="[float]0" Top="[float]0" Width="[float]1540">
-					<FlexibleLayoutContainer Height="[float]224" Id="344c079f99a04a26aa3a7fac06420da7" Left="[float]8" Top="[float]8" Width="[float]1524">
-						<FlexibleLayoutComponent Height="[float]212" Id="3d67a17ed71c47e3ab11bbd2d7d827b4" Left="[float]14" Top="[float]6" Width="[float]1335">
-							<ArrayViewer ArrayElement="[UIModel]3e7883dd658941f18a366467a2907118" BaseName="[string]Array" Columns="[int]10" Dimensions="[int]2" FirstIndex="[ArrayElementIndex]16,0" Height="[float]192" HorizontalScrollBarVisibility="[ScrollBarVisibility]Visible" Id="94dea724b5a435b80b2197ea49c25ec" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]8087118a741b49dc9475ab7db2d2c3c2" Left="[float]0" Orientation="[SMOrientation]Horizontal" Rows="[int]6" TabIndex="[int]0" Top="[float]20" Value="{DataItemBinding Id=e2776756275749e889063ee3c341d8dc}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]1335">
-								<p.DefaultElementValue>""</p.DefaultElementValue>
-								<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="3e7883dd658941f18a366467a2907118" IsReadOnly="[bool]True" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]127" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<HtmlBehavior ClassAttributes="" xmlns="http://www.ni.com/PlatformFramework">
-									<p.ElementAttributes>
-										<Attribute Name="default-element-value" Value="" />
-									</p.ElementAttributes>
-								</HtmlBehavior>
-							</ArrayViewer>
-							<Label Height="[float]16" Id="8087118a741b49dc9475ab7db2d2c3c2" LabelOwner="[UIModel]94dea724b5a435b80b2197ea49c25ec" Left="[float]0" Text="[string]Raw Data" Top="[float]0" Width="[float]50" />
-						</FlexibleLayoutComponent>
-					</FlexibleLayoutContainer>
-				</FlexibleLayoutWrapper>
-			</FlexibleLayoutGroup>
-			<FlexibleLayoutGroup Height="[float]263" Id="c50cdc5e5f13403590baad4ede94cdd7" Left="[float]30" Top="[float]796" Width="[float]1540" xmlns="http://www.ni.com/PanelCommon">
-				<FlexibleLayoutWrapper FlexGrow="[double]1" Height="[float]263" Id="c87174adb01c4016a00746adae73af17" Left="[float]0" Top="[float]0" Width="[float]1540">
-					<FlexibleLayoutContainer Height="[float]247" Id="ddb8364955784a7289caac5db2ce1f35" Left="[float]8" Top="[float]8" Width="[float]1524">
+			<FlexibleLayoutGroup Height="[float]59" Id="c50cdc5e5f13403590baad4ede94cdd7" Left="[float]30" Top="[float]858" Width="[float]1540" xmlns="http://www.ni.com/PanelCommon">
+				<FlexibleLayoutWrapper FlexGrow="[double]1" Height="[float]59" Id="c87174adb01c4016a00746adae73af17" Left="[float]0" Top="[float]0" Width="[float]1540">
+					<FlexibleLayoutContainer Height="[float]43" Id="ddb8364955784a7289caac5db2ce1f35" Left="[float]8" Top="[float]8" Width="[float]1524">
 						<FlexibleLayoutComponent Height="[float]31" Id="fd08d4013e19415ca6945bc0bfaddccd" Left="[float]14" Top="[float]6" Width="[float]1496">
 							<LVHyperlinkControl BaseName="[string]Hyperlink Control" Content="[string]utilizes siasky.net" Foreground="[SMColor]#ff92d050" Height="[float]31" Id="112c6859a10e4c62b0ef0e775c5f1925" IsUrlSameAsContent="[bool]False" Label="[UIModel]b5f197b7c14401ab0e909756c2468c" Left="[float]0" TabIndex="[int]0" TargetName="[string]_blank" TargetUrl="{DataItemBinding Id=fff5d85ac9a44b3799fd28f49c64e5f1}" TextAlignment="[TextAlignment]Center" Top="[float]0" Width="[float]1496" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 								<FontSetting FontFamily="Segoe UI" FontSize="9" FontStyle="Bold" Id="7283e3a7a8f245bea826d8baac7473aa" xmlns="http://www.ni.com/PlatformFramework" />
 							</LVHyperlinkControl>
 							<Label Height="[float]16" Id="b5f197b7c14401ab0e909756c2468c" LabelOwner="[UIModel]112c6859a10e4c62b0ef0e775c5f1925" Left="[float]0" Text="[string]Hyperlink Control" Top="[float]-20" Visible="[bool]False" Width="[float]94" />
-						</FlexibleLayoutComponent>
-						<FlexibleLayoutComponent Height="[float]108" Id="9c6b64f889d5442db109e436cfa42ade" Left="[float]14" Top="[float]45" Width="[float]152">
-							<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]88" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="3cb00fc8888343cab78ade4c474741da" IsReadOnly="[bool]True" Label="[UIModel]7c9804032fdf49d0ac0f7ff90915dcc2" Left="[float]0" TabIndex="[int]0" Text="{DataItemBinding Id=a09ee2db72f4e8aa31bc8c07db71a24}" Top="[float]20" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]152" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-							<Label Height="[float]16" Id="7c9804032fdf49d0ac0f7ff90915dcc2" LabelOwner="[UIModel]3cb00fc8888343cab78ade4c474741da" Left="[float]0" Text="[string]FileText" Top="[float]0" Width="[float]39" />
-						</FlexibleLayoutComponent>
-						<FlexibleLayoutComponent Height="[float]196" Id="2d5a0cd6b54e4a6695e3de84737a128b" Left="[float]174" Top="[float]45" Width="[float]176">
-							<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]176" Id="e07a8d613f7f4485b8ee236ce4800359" Label="[UIModel]ef9e042d3bd4c6193e6a537a55c30a4" Left="[float]0" TabIndex="[int]0" Top="[float]20" Value="{DataItemBinding Id=6095c85aa28d412292eb4dc304848ee2}" Width="[float]176">
-								<LED ContentVisibility="[Visibility]Collapsed" Height="[float]24" Id="115083fd5bd430fb3997ec6004947b0" IsReadOnly="[bool]True" Label="[UIModel]26e6220dbe9d402a9e8cb4d905b478d5" Left="[float]8" Shape="[LEDShape]Round" Top="[float]24" TrueBackground="[SMSolidColorBrush]#ffff0000" Value="{ClusterBinding FieldName=status}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<Label Height="[float]16" Id="26e6220dbe9d402a9e8cb4d905b478d5" LabelOwner="[UIModel]115083fd5bd430fb3997ec6004947b0" Left="[float]8" Text="[string]status" Top="[float]4" Width="[float]32" />
-								<NumericText Height="[float]24" Id="29bafc90c49a4f9d8e1617154e62ea05" Interval="[int]1" IsReadOnly="[bool]True" Label="[UIModel]2718fdf9d470410db5c383f69f821dac" Left="[float]64" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Visible" Top="[float]24" Value="{ClusterBinding FieldName=code}" ValueFormatter="[string]Decimal, Uppercase, Signed" ValueType="[Type]Int32" Width="[float]104" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<Label Height="[float]16" Id="2718fdf9d470410db5c383f69f821dac" LabelOwner="[UIModel]29bafc90c49a4f9d8e1617154e62ea05" Left="[float]64" Text="[string]code" Top="[float]4" Width="[float]26" />
-								<StringControl AcceptsReturn="[bool]True" Height="[float]96" Id="fe413c160c754fc6b86d44184282fd1b" IsReadOnly="[bool]True" Label="[UIModel]c40a1027c911498da37c4264b226c552" Left="[float]8" Text="{ClusterBinding FieldName=source}" Top="[float]72" Width="[float]160" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<Label Height="[float]16" Id="c40a1027c911498da37c4264b226c552" LabelOwner="[UIModel]fe413c160c754fc6b86d44184282fd1b" Left="[float]8" Text="[string]source" Top="[float]52" Width="[float]35" />
-							</Cluster>
-							<Label Height="[float]16" Id="ef9e042d3bd4c6193e6a537a55c30a4" LabelOwner="[UIModel]e07a8d613f7f4485b8ee236ce4800359" Left="[float]0" Text="[string]error out" Top="[float]0" Width="[float]47" />
-						</FlexibleLayoutComponent>
-						<FlexibleLayoutComponent Height="[float]196" Id="74fcea1b28934dd4805137f4a0e711dc" Left="[float]358" Top="[float]45" Width="[float]176">
-							<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]176" Id="60ef958481fe474dadf8d53a23aa3ec2" Label="[UIModel]308ae38feb94409183fed2fa1a95b052" Left="[float]0" TabIndex="[int]0" Top="[float]20" Value="{DataItemBinding Id=775499e59215465a8d310a11dba5cfa8}" Width="[float]176">
-								<LED ContentVisibility="[Visibility]Collapsed" Height="[float]24" Id="968ab225ebee41f1b0d317a34b968c9c" IsReadOnly="[bool]True" Label="[UIModel]7c74076149fd4f039afdc8e258e12fde" Left="[float]8" Shape="[LEDShape]Round" Top="[float]24" TrueBackground="[SMSolidColorBrush]#ffff0000" Value="{ClusterBinding FieldName=status}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<Label Height="[float]16" Id="7c74076149fd4f039afdc8e258e12fde" LabelOwner="[UIModel]968ab225ebee41f1b0d317a34b968c9c" Left="[float]8" Text="[string]status" Top="[float]4" Width="[float]32" />
-								<NumericText Height="[float]24" Id="3af51af18909484785c561cfe34cf874" Interval="[int]1" IsReadOnly="[bool]True" Label="[UIModel]87f37d589c9b45efbf6c062a0aeb0b50" Left="[float]64" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Visible" Top="[float]24" Value="{ClusterBinding FieldName=code}" ValueFormatter="[string]Decimal, Uppercase, Signed" ValueType="[Type]Int32" Width="[float]104" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<Label Height="[float]16" Id="87f37d589c9b45efbf6c062a0aeb0b50" LabelOwner="[UIModel]3af51af18909484785c561cfe34cf874" Left="[float]64" Text="[string]code" Top="[float]4" Width="[float]26" />
-								<StringControl AcceptsReturn="[bool]True" Height="[float]96" Id="9e19614bd7424538b57cb3cb8fbbc4e7" IsReadOnly="[bool]True" Label="[UIModel]21e1bdd592344d4a9ddd1144ee2bffb9" Left="[float]8" Text="{ClusterBinding FieldName=source}" Top="[float]72" Width="[float]160" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<Label Height="[float]16" Id="21e1bdd592344d4a9ddd1144ee2bffb9" LabelOwner="[UIModel]9e19614bd7424538b57cb3cb8fbbc4e7" Left="[float]8" Text="[string]source" Top="[float]52" Width="[float]35" />
-							</Cluster>
-							<Label Height="[float]16" Id="308ae38feb94409183fed2fa1a95b052" LabelOwner="[UIModel]60ef958481fe474dadf8d53a23aa3ec2" Left="[float]0" Text="[string]error out_2" Top="[float]0" Width="[float]59" />
-						</FlexibleLayoutComponent>
-						<FlexibleLayoutComponent Height="[float]196" Id="fc3cbc78d64a462f8ea5778076e7cf48" Left="[float]542" Top="[float]45" Width="[float]176">
-							<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]176" Id="462c8c77fdad4b749c6412a9098c6243" Label="[UIModel]c576a5def6d4430a89a0653d4c93bd5f" Left="[float]0" TabIndex="[int]0" Top="[float]20" Value="{DataItemBinding Id=7c15a886c49c47ddbde5a85a8fba7081}" Width="[float]176">
-								<LED ContentVisibility="[Visibility]Collapsed" Height="[float]24" Id="93aa9ee7d37d46c694d47b9e6cefbe78" IsReadOnly="[bool]True" Label="[UIModel]49653d45ff9741a685eb9a19136e5752" Left="[float]8" Shape="[LEDShape]Round" Top="[float]24" TrueBackground="[SMSolidColorBrush]#ffff0000" Value="{ClusterBinding FieldName=status}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<Label Height="[float]16" Id="49653d45ff9741a685eb9a19136e5752" LabelOwner="[UIModel]93aa9ee7d37d46c694d47b9e6cefbe78" Left="[float]8" Text="[string]status" Top="[float]4" Width="[float]32" />
-								<NumericText Height="[float]24" Id="d59ca35be5534a17b6ee773055904f0a" Interval="[int]1" IsReadOnly="[bool]True" Label="[UIModel]c25ab1bb25424e7989a204d03b1e68b4" Left="[float]64" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Visible" Top="[float]24" Value="{ClusterBinding FieldName=code}" ValueFormatter="[string]Decimal, Uppercase, Signed" ValueType="[Type]Int32" Width="[float]104" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<Label Height="[float]16" Id="c25ab1bb25424e7989a204d03b1e68b4" LabelOwner="[UIModel]d59ca35be5534a17b6ee773055904f0a" Left="[float]64" Text="[string]code" Top="[float]4" Width="[float]26" />
-								<StringControl AcceptsReturn="[bool]True" Height="[float]96" Id="11c7679ffe204f4984e2ae474ce39e73" IsReadOnly="[bool]True" Label="[UIModel]cf163057ee449e0ad32030525f774df" Left="[float]8" Text="{ClusterBinding FieldName=source}" Top="[float]72" Width="[float]160" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-								<Label Height="[float]16" Id="cf163057ee449e0ad32030525f774df" LabelOwner="[UIModel]11c7679ffe204f4984e2ae474ce39e73" Left="[float]8" Text="[string]source" Top="[float]52" Width="[float]35" />
-							</Cluster>
-							<Label Height="[float]16" Id="c576a5def6d4430a89a0653d4c93bd5f" LabelOwner="[UIModel]462c8c77fdad4b749c6412a9098c6243" Left="[float]0" Text="[string]Output" Top="[float]0" Width="[float]38" />
 						</FlexibleLayoutComponent>
 					</FlexibleLayoutContainer>
 				</FlexibleLayoutWrapper>
@@ -706,44 +683,11 @@
 		<DataItem AdaptToDiagramType="True" DataType="Boolean" Id="2fb12e7ea92741c0b4909792e068728f" IsLatched="True" Name="Upload File" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>False</p.DefaultValue>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" DataType="String" Id="a09ee2db72f4e8aa31bc8c07db71a24" Name="FileText" xmlns="http://www.ni.com/MocCommon">
+		<DataItem AdaptToDiagramType="True" DataType="String" Id="db295a1acb894df0b07c56081f4ba15c" Name="upload_skylink" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>""</p.DefaultValue>
 		</DataItem>
-		<DataItem DataType="Error" Id="6095c85aa28d412292eb4dc304848ee2" Name="error out" xmlns="http://www.ni.com/MocCommon">
-			<p.DefaultValue>
-				<Cluster>
-					<Field1>False</Field1>
-					<Field2>0</Field2>
-					<Field3>""</Field3>
-				</Cluster>
-			</p.DefaultValue>
-			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
-				<TypeDefinitionTarget TargetName="NI::G Core::Error::Error.gtype" />
-			</p.TypeDefinitionTargets>
-		</DataItem>
-		<DataItem DataType="Error" Id="7c15a886c49c47ddbde5a85a8fba7081" Name="Output" xmlns="http://www.ni.com/MocCommon">
-			<p.DefaultValue>
-				<Cluster>
-					<Field1>False</Field1>
-					<Field2>0</Field2>
-					<Field3>""</Field3>
-				</Cluster>
-			</p.DefaultValue>
-			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
-				<TypeDefinitionTarget TargetName="NI::G Core::Error::Error.gtype" />
-			</p.TypeDefinitionTargets>
-		</DataItem>
-		<DataItem DataType="Error" Id="775499e59215465a8d310a11dba5cfa8" Name="error out_2" xmlns="http://www.ni.com/MocCommon">
-			<p.DefaultValue>
-				<Cluster>
-					<Field1>False</Field1>
-					<Field2>0</Field2>
-					<Field3>""</Field3>
-				</Cluster>
-			</p.DefaultValue>
-			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
-				<TypeDefinitionTarget TargetName="NI::G Core::Error::Error.gtype" />
-			</p.TypeDefinitionTargets>
+		<DataItem AdaptToDiagramType="True" DataType="Int32" Id="d5cedd60533246d7992f5e61952079dd" Name="Menu" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
 		</DataItem>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">

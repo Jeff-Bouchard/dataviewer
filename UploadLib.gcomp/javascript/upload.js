@@ -95,17 +95,19 @@ window.ReadText = function (){
         //"https://" + window.location.hostname + "/" + result.skylink
 
           
-        document.getElementById("skylinks").appendChild(newLink)
+        document.getElementById("upload_skylink").appendChild(newLink)
         var linkBreak = document.createElement("br")
-        document.getElementById("skylinks").appendChild(linkBreak)
+        document.getElementById("upload_skylink").appendChild(linkBreak)
+        //document.getElementById("skylinks").appendChild(linkBreak)
+
       })
       .catch(error => {
         button.classList.remove("loading")
         console.error("Error:", error)
       })
 
-
-    return fileText;
+      return "done"
+    
 }
 
 }());
