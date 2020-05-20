@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="ADB2AD4013128910CFCB2530076B757E260A66C249B66C94ECB9EA73DD3A5B1CA94A5670D5D47E2BCDB8190E516F5F08BBCD16167949A2AA49068EC0005B21DC" Timestamp="1D62E23E9C6C0A3" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="5710EEE24167D47E1D2344E5341528A2BBACD5AFF087EE8005641C2BA6CA22CF3DC5E702DE2F0FDAE0EF0E95AC83AA0FF94FA6425D5C250BC5EFCB0FF60FFC6B" Timestamp="1D62E378313B8F6" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Web Module: WebVI" Name="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
@@ -15,10 +15,11 @@
 		<CompilerSymbolTable Id="a5a5f10e58c34bbd90e51f9a7dcceb12" xmlns="http://www.ni.com/PlatformFramework" />
 		<ComponentConfiguration ComponentSubtypeIdentifier="WebApplication" Id="26a95038cb34f9bbba4368efe356992" Name="Configuration1">
 			<CompilerSymbolTable Id="64051322b7f94ab989546e99c7d11237" xmlns="http://www.ni.com/PlatformFramework" />
-			<WebApplicationOutputTypeProperties IconFileEnvoy="f1ddf42402c54b9b92df0004e4f6896a" Id="c5c208d44d0b46f3a65536d55ceec807" xmlns="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" />
+			<WebApplicationOutputTypeProperties IconFileEnvoy="d4025e60fa5441ab9393935de405e8d5" Id="c5c208d44d0b46f3a65536d55ceec807" xmlns="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI" />
 			<ComponentItemProperties AssociatedEnvoyId="70b5576296641f3a8f726576da69823" Id="a6b47354a1b04f078ba075d37a136149" TopLevel="True" />
 			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="f1ddf42402c54b9b92df0004e4f6896a" Id="8f8ce905aed6422bbaba80c7af1145ee" />
 			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="779b046ba08244649912767959564ef4" Id="fe846a3e809746738de0f6d615dbca30" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="d4025e60fa5441ab9393935de405e8d5" Id="850a2b5b65764f3f87d99c5e5ad2ff9f" />
 		</ComponentConfiguration>
 	</ComponentDefinition>
 	<EnvoyManagerFile Id="187d598991f416a8047967020593ae4" xmlns="http://www.ni.com/PlatformFramework">
@@ -35,6 +36,7 @@
 				<NameScopingEnvoy AutomaticallyResolveUp="True" Id="91a3ded439e94027abe59a27c005a7f8" Name="assets">
 					<FileReference Bindings=".ico" Id="f1ddf42402c54b9b92df0004e4f6896a" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="app.ico" StoragePath="assets\app.ico" />
 					<FileReference Bindings=".png" Id="779b046ba08244649912767959564ef4" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="app_icon.png" StoragePath="assets\app_icon.png" />
+					<FileReference Bindings=".ico" Id="d4025e60fa5441ab9393935de405e8d5" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="icon.ico" StoragePath="assets\icon.ico" />
 				</NameScopingEnvoy>
 			</NameScopingEnvoy>
 		</EmbeddedDefinitionReference>
