@@ -1,4 +1,4 @@
-# Skynet DataViewer 
+# Sia Skynet DataViewer 
 powered by [Sia Skynet](https://www.siasky.net)
 
 ### **DataViewer** is also available on the [Skynet Appstore](https://skynethub.io/_B3VrECGOHPEAFknVQwj_vWsyaX_8iIRuB_TL09cuj9uZQ/index.html#/apps/utilities).
