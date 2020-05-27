@@ -8,7 +8,7 @@ powered by [Sia Skynet](https://www.siasky.net)
 ### Demo Video
 [Skylink Video URL](https://siasky.net/_AJ4ZSoHcqYHAbbXDuIAhAqG2Yte6LJ0SDd1_SDR-Zl7NA)
 
-![Gif of Demo Video](https://)
+![Gif of Demo Video](https://github.com/cycleworm/dataviewer/blob/master/assets/SiaSkynetDataviewerDemo.gif)
 
 #### Description:
 A webapp running on skynet that is capable of loading data via skylink and visualizing the data in an graph and also in a two dimensional table. The raw data can come from anywhere (e.g. Excel, VSCode or any other tools capable of saving textfiles). 
