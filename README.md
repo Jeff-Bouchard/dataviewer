@@ -5,6 +5,9 @@ powered by [Sia Skynet](https://www.siasky.net)
 
 ### This is the direct link to the latest deployed version -> [Link](https://)
 
+### Demo Video
+[Skylink Video URL](https://siasky.net/fAQPMle28jWX6fTY35oL6pzd-3WqONSJY5O5I83ENUjWgw)
+
 #### Description:
 A webapp running on skynet that is capable of loading data via skylink and visualizing the data in an graph and also in a two dimensional table. The raw data can come from anywhere (e.g. Excel, VSCode or any other tools capable of saving textfiles). 
 
