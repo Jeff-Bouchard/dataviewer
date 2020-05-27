@@ -3,7 +3,7 @@ powered by [Sia Skynet](https://www.siasky.net)
 
 ### **DataViewer** is also available on the [Skynet Appstore](https://skynethub.io/_B3VrECGOHPEAFknVQwj_vWsyaX_8iIRuB_TL09cuj9uZQ/index.html#/apps/utilities).
 
-### This is the direct link to the latest deployed version -> [Link](https://)
+### This is the direct link to the latest deployed version -> [Link](https://siasky.net/FADdLUVmfCDhekv8liHPWju3pYbk2WUr6n6e12CB8fYs1Q/Index.html)
 
 ### Demo Video
 [Skylink Video URL](https://siasky.net/fAQPMle28jWX6fTY35oL6pzd-3WqONSJY5O5I83ENUjWgw)
